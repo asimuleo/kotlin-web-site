@@ -143,7 +143,7 @@ fun main() {
 To build two-element windows, there is a separate function - [`zipWithNext()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/zip-with-next.html).
 It creates pairs of adjacent elements of the receiver collection.
 Note that `zipWithNext()` doesn't break the collection into pairs; it creates a `Pair` for _each_ element except the last
-one, so its result on `[1, 2, 3, 4]` is `[[1, 2], [2, 3], [3, 4]]`, not `[[1, 2`], `[3, 4]]`.
+one, so its result on `[1, 2, 3, 4]` is `[(1, 2),(2, 3), (3, 4)]`, not `[(1, 2`), `(3, 4)]`.
 `zipWithNext()` can be called with a transformation function as well; it should take two elements of the receiver collection
 as arguments.
 
